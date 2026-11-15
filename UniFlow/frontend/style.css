@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #0b0c10;
+    color: #ffffff;
+}
+
+a { text-decoration: none; }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #333;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    color: #A2A3B8;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #ffffff;
+}
+
+.btn-primary {
+    background: #6F9FFF;
+    color: #000000;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+    background: #8DB3FF;
+    transform: translateY(-2px);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px 40px 20px;
+}
+
+.hero-content {
+    max-width: 700px;
+    margin-bottom: 60px;
+}
+
+.title {
+    display: block;
+    font-size: 12px;
+    color: #A2A3B8;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.accent {
+    color: #6F9FFF;
+}
+
+.hero p {
+    color: #A2A3B8;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.hero-button {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.statistics {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.statistics-item h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.statistics-item p {
+    color: #A2A3B8;
+    font-size: 14px;
+}
+
+.hero-cards {
+    padding: 40px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.section-desc {
+    color: #A2A3B8;
+    font-size: 14px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #10101A;
+    border: 1px solid #333;
+    padding: 20px;
+    border-radius: 10px;
+    height: 200px;
+}
+
+.link-more {
+    color: #6F9FFF;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.link-more:hover {
+    color: #ffffff;
+}
