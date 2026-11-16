@@ -1,44 +1,211 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <title>/</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniFlow</title>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Iosevka+Charon+Mono:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main2.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="bg-star bg-star-left" aria-hidden="true">
+            <svg viewBox="0 0 703 873" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_f_17_4)">
+                    <path d="M243.5 108L323.539 354.335L582.552 354.335L373.006 506.579L453.045 752.915L243.5 600.671L33.9546 752.915L113.994 506.579L-95.5516 354.335L163.461 354.335L243.5 108Z" fill="url(#paint0_radial_17_4)"/>
+                </g>
+                <defs>
+                    <filter id="filter0_f_17_4" x="-215.552" y="-12" width="918.103" height="884.915" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                        <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_17_4"/>
+                    </filter>
+                    <radialGradient id="paint0_radial_17_4" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(243.5 464.5) rotate(90) scale(356.5)">
+                        <stop stop-color="#6F9FFF" stop-opacity="0.6"/>
+                        <stop offset="1" stop-color="#1E2D4C" stop-opacity="0.5"/>
+                    </radialGradient>
+                </defs>
+            </svg>
+        </div>
+
+        <div class="bg-star bg-star-right" aria-hidden="true">
+            <svg viewBox="0 0 703 873" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_f_17_4_r)">
+                    <path d="M243.5 108L323.539 354.335L582.552 354.335L373.006 506.579L453.045 752.915L243.5 600.671L33.9546 752.915L113.994 506.579L-95.5516 354.335L163.461 354.335L243.5 108Z" fill="url(#paint0_radial_17_4_r)"/>
+                </g>
+                <defs>
+                    <filter id="filter0_f_17_4_r" x="-215.552" y="-12" width="918.103" height="884.915" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                        <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_17_4"/>
+                    </filter>
+                    <radialGradient id="paint0_radial_17_4_r" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(243.5 464.5) rotate(90) scale(356.5)">
+                        <stop stop-color="#6F9FFF" stop-opacity="0.6"/>
+                        <stop offset="1" stop-color="#1E2D4C" stop-opacity="0.5"/>
+                    </radialGradient>
+                </defs>
+            </svg>
+        </div>
+
+        <div class="bg-star bg-star-bottom" aria-hidden="true">
+            <svg viewBox="0 0 703 873" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_f_17_4_b)">
+                    <path d="M243.5 108L323.539 354.335L582.552 354.335L373.006 506.579L453.045 752.915L243.5 600.671L33.9546 752.915L113.994 506.579L-95.5516 354.335L163.461 354.335L243.5 108Z" fill="url(#paint0_radial_17_4_b)"/>
+                </g>
+                <defs>
+                    <filter id="filter0_f_17_4_b" x="-215.552" y="-12" width="918.103" height="884.915" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                        <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_17_4"/>
+                    </filter>
+                    <radialGradient id="paint0_radial_17_4_b" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(243.5 464.5) rotate(90) scale(356.5)">
+                        <stop stop-color="#6F9FFF" stop-opacity="0.6"/>
+                        <stop offset="1" stop-color="#1E2D4C" stop-opacity="0.5"/>
+                    </radialGradient>
+                </defs>
+            </svg>
+        </div>
+
         <header class="header">
-            <div class="logo"><img src="" alt="logo"></div>
-            <nav class="nav">
-                <a href="events.html">Мероприятия</a>
-                <a href="index.html">Главная</a>
-                <a href="#"></a>
-            </nav>
-            <button class="btn">Регистрация</button>
+            <div class="header-inner">
+                <div class="logo">UniFlow</div>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="events.html" class="nav-link">Мероприятия</a>
+                    <a href="#" class="nav-link">Как это работает</a>
+                    <a href="#" class="nav-link">Поддержка</a>
+                </nav>
+                <a href="events.html" class="btn btn-small">Найти мероприятие</a>
+            </div>
         </header>
 
-        <main class="">
-            <div>
-                <h1 class="">Мероприятия</h1>
-                <p></p>
-            </div>
-            <section class="filters">
-                <input type="text" placeholder="Название или тема" class="search-input">
-                <select><option>Все направления</option></select>
-                <select><option>Все даты</option></select>
-            </section>
-            <div class="tabs">
-                <button class="tab active"></button>
-                <button class="tab"></button>
-                <button class="tab"></button>
-            </div>
-            <div class="results-info">
-                <span>3 мероприятия</span>
-            </div>
-            <div class="cards">
-                <article class="card"></article>
-                <article class="card"></article>
-                <article class="card"></article>
-            </div>
+        <main class="hero">
+            <h1 class="hero-title">Мероприятия</h1>
+            <p class="hero-desc">Все хакатоны, мастер-классы и конференции для тебя в одной ленте.</p>
         </main>
-    </body>
+
+        <section class="filters">
+            <div class="filters-top">
+                <div class="search">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" id="searchInput" class="search-input" placeholder="Название, тема или навык">
+                </div>
+                <div class="filter-dropdown">
+                    <select id="dateFilter" class="date-select">
+                        <option value="all">Все даты</option>
+                        <option value="november">Ноябрь</option>
+                        <option value="february">Февраль</option>
+                        <option value="march">Март</option>
+                    </select>
+                    <svg class="filter-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </div>
+            </div>
+            <div class="filters-bottom">
+                <div class="filter-btn active" data-filter="all">Все</div>
+                <div class="filter-btn" data-filter="hackathon">Хакатоны</div>
+                <div class="filter-btn" data-filter="workshop">Воркшопы</div>
+                <div class="filter-btn" data-filter="conference">Конференции</div>
+            </div>
+        </section>
+
+        <section class="events">
+            <div class="grid" id="cardsContainer">
+
+                <svg style="display: none;">
+                    <defs>
+                        <path id="star-template" d="M266.663 38.8096L189.457 44.0449L248.841 93.6602L232.906 157H15C6.71573 157 0 150.284 0 142V15C1.54622e-06 6.71573 6.71573 0 15 0H282.248L266.663 38.8096ZM324.059 38.9219L324.129 39.0967L324.316 39.1094L391 43.6299V52.4619L341.967 93.4297L341.822 93.5508L341.868 93.7334L357.784 157H342.958L295.659 127.306L295.5 127.206L295.341 127.306L248.042 157H233.216L249.132 93.7334L249.178 93.5508L249.033 93.4297L190.222 44.293L266.684 39.1094L266.871 39.0967L266.941 38.9219L282.571 0H308.429L324.059 38.9219ZM342.394 157H248.606L295.5 127.56L342.394 157ZM391 142C391 150.284 384.284 157 376 157H358.094L342.159 93.6602L391 52.8535V142ZM278.482 57.6416L236.937 60.459L268.893 87.1582L258.732 127.541L294 105.4L329.268 127.541L319.107 87.1582L351.063 60.459L309.518 57.6416L294 19L278.482 57.6416ZM309.239 57.7539L309.31 57.9287L309.497 57.9414L350.298 60.707L318.916 86.9277L318.771 87.0488L318.817 87.2314L328.794 126.89L294.159 105.146L294 105.046L293.841 105.146L259.205 126.89L269.183 87.2314L269.229 87.0488L269.084 86.9277L237.701 60.707L278.503 57.9414L278.69 57.9287L278.761 57.7539L294 19.8037L309.239 57.7539ZM376 0C384.284 0 391 6.71573 391 15V43.3291L324.337 38.8096L308.752 0H376Z"/>
+                    </defs>
+                </svg>
+
+                <a href="registration.html" class="card blue" data-category="hackathon" data-date="november">
+                    <div class="cover">
+                        <svg class="cover-svg" viewBox="0 0 391 157" preserveAspectRatio="xMidYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <use href="#star-template" fill="url(#grad-blue)"/>
+                            <mask id="mask-blue" fill="white">
+                                <use href="#star-template"/>
+                            </mask>
+                            <use href="#star-template" stroke="#6F9FFF" stroke-width="0.6" mask="url(#mask-blue)"/>
+                            <defs>
+                                <linearGradient id="grad-blue" x1="213.5" y1="132.5" x2="132.5" y2="22.5" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#101012" stop-opacity="0.4"/>
+                                    <stop offset="1" stop-color="#6F9FFF" stop-opacity="0.4"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="cover-title">HACK<br>THE FUTURE</div>
+                    </div>
+                    <div class="info">
+                        <span class="tag">ХАКАТОН</span>
+                        <h4 class="card-title">NEON HACK 2026</h4>
+                        <p class="desc">48 часов на создание AI-продукта.</p>
+                        <p class="date">28-30 ноября · Москва · онлайн</p>
+                        <div class="status">Регистрация открыта</div>
+                        <div class="price">Бесплатно</div>
+                    </div>
+                </a>
+
+                <a href="registration.html" class="card pink" data-category="workshop" data-date="february">
+                    <div class="cover">
+                        <svg class="cover-svg" viewBox="0 0 391 157" preserveAspectRatio="xMidYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <use href="#star-template" fill="url(#grad-pink)"/>
+                            <mask id="mask-pink" fill="white">
+                                <use href="#star-template"/>
+                            </mask>
+                            <use href="#star-template" stroke="#FF2E9A" stroke-width="0.6" mask="url(#mask-pink)"/>
+                            <defs>
+                                <linearGradient id="grad-pink" x1="213.5" y1="132.5" x2="132.5" y2="22.5" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#101012" stop-opacity="0.4"/>
+                                    <stop offset="1" stop-color="#FF2E9A" stop-opacity="0.4"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="cover-title">MAKE<br>IT BOLD</div>
+                    </div>
+                    <div class="info">
+                        <span class="tag">ВОРКШОП / ДИЗАЙН</span>
+                        <h4 class="card-title">Design Jam</h4>
+                        <p class="desc">От первой идеи до живого прототипа</p>
+                        <p class="date">10 февраля · онлайн</p>
+                        <div class="status">Регистрация открыта</div>
+                        <div class="price">Бесплатно</div>
+                    </div>
+                </a>
+
+                <a href="registration.html" class="card purple" data-category="conference" data-date="march">
+                    <div class="cover">
+                        <svg class="cover-svg" viewBox="0 0 391 157" preserveAspectRatio="xMidYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <use href="#star-template" fill="url(#grad-purple)"/>
+                            <mask id="mask-purple" fill="white">
+                                <use href="#star-template"/>
+                            </mask>
+                            <use href="#star-template" stroke="#AD6FFF" stroke-width="0.6" mask="url(#mask-purple)"/>
+                            <defs>
+                                <linearGradient id="grad-purple" x1="213.5" y1="132.5" x2="132.5" y2="22.5" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#101012" stop-opacity="0.4"/>
+                                    <stop offset="1" stop-color="#AD6FFF" stop-opacity="0.4"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="cover-title">NEXT<br>IS NOW</div>
+                    </div>
+                    <div class="info">
+                        <span class="tag">КОНФЕРЕНЦИЯ / КАРЬЕРА</span>
+                        <h4 class="card-title">Tech Future</h4>
+                        <p class="desc">Люди и технологии завтрашнего дня</p>
+                        <p class="date">20 и 24 марта · Москва · офлайн</p>
+                        <div class="status">Регистрация открыта</div>
+                        <div class="price">Бесплатно</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
