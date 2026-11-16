@@ -1,14 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
   
-  // ==========================================
-  // 1. ЛОГИКА ДЛЯ СТРАНИЦЫ РЕГИСТРАЦИИ
-  // ==========================================
   const radioSolo = document.getElementById('radio-solo');
   const radioTeam = document.getElementById('radio-team');
   const teamFields = document.getElementById('team-fields');
   const form = document.querySelector('.reg-form');
 
-  // Проверяем, что мы находимся на странице с формой, прежде чем искать радиокнопки
   if (form && radioSolo && radioTeam && teamFields) {
     const teamInputs = teamFields.querySelectorAll('input'); 
 
@@ -56,16 +52,12 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     });
   }
-
-  // ==========================================
-  // 2. ЛОГИКА ДЛЯ СТРАНИЦЫ МЕРОПРИЯТИЙ (Фильтры)
-  // ==========================================
+  
   const searchInput = document.getElementById('searchInput');
   const dateFilter = document.getElementById('dateFilter');
   const filterBtns = document.querySelectorAll('.filter-btn');
   const cards = document.querySelectorAll('.card');
 
-  // Проверяем, что мы на странице мероприятий
   if (searchInput && dateFilter && filterBtns.length > 0) {
     let currentCategory = 'all';
 
