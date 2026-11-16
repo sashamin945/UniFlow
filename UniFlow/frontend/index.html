@@ -1,56 +1,189 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <title>UniFlow</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniFlow</title>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Iosevka+Charon+Mono:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="bg-star bg-star-left" aria-hidden="true">
+            <svg viewBox="0 0 703 873" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_f_17_4)">
+                    <path d="M243.5 108L323.539 354.335L582.552 354.335L373.006 506.579L453.045 752.915L243.5 600.671L33.9546 752.915L113.994 506.579L-95.5516 354.335L163.461 354.335L243.5 108Z" fill="url(#paint0_radial_17_4)"/>
+                </g>
+                <defs>
+                    <filter id="filter0_f_17_4" x="-215.552" y="-12" width="918.103" height="884.915" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                        <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_17_4"/>
+                    </filter>
+                    <radialGradient id="paint0_radial_17_4" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(243.5 464.5) rotate(90) scale(356.5)">
+                        <stop stop-color="#6F9FFF" stop-opacity="0.6"/>
+                        <stop offset="1" stop-color="#1E2D4C" stop-opacity="0.5"/>
+                    </radialGradient>
+                </defs>
+            </svg>
+        </div>
+
+        <div class="bg-star bg-star-right" aria-hidden="true">
+            <svg viewBox="0 0 703 873" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_f_17_4_r)">
+                    <path d="M243.5 108L323.539 354.335L582.552 354.335L373.006 506.579L453.045 752.915L243.5 600.671L33.9546 752.915L113.994 506.579L-95.5516 354.335L163.461 354.335L243.5 108Z" fill="url(#paint0_radial_17_4_r)"/>
+                </g>
+                <defs>
+                    <filter id="filter0_f_17_4_r" x="-215.552" y="-12" width="918.103" height="884.915" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                        <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_17_4"/>
+                    </filter>
+                    <radialGradient id="paint0_radial_17_4_r" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(243.5 464.5) rotate(90) scale(356.5)">
+                        <stop stop-color="#6F9FFF" stop-opacity="0.6"/>
+                        <stop offset="1" stop-color="#1E2D4C" stop-opacity="0.5"/>
+                    </radialGradient>
+                </defs>
+            </svg>
+        </div>
+
         <header class="header">
             <div class="logo">UniFlow</div>
             <nav class="nav">
-                <a href="events.html">Мероприятия</a>
-                <a href="#">Как это работает</a>
-                <a href="index.html">Главная</a>
-                <a href="#">Поддержка</a>
+                <a href="#" class="nav-link">Главная</a>
+                <a href="#" class="nav-link">Мероприятия</a>
+                <a href="#" class="nav-link">Как это работает</a>
+                <a href="#" class="nav-link">Поддержка</a>
             </nav>
-            <button class="btn-primary">Личный кабинет</button>
+            <a href="#" class="btn btn-small">Найти мероприятие</a>
         </header>
-        
-        <main>
-            <section class="hero">
-                <div class="hero-content">
-                    <span class="title">ВСЕ ИВЕНТЫ КОМПАНИЙ В ОДНОМ МЕСТЕ</span>
-                    <h1>Найди свое мероприятие.<br><span class="accent">Запишись за пару кликов.</span></h1>
-                    <p>Все хакатоны, мастер-классы и конференции для тебя в одной ленте.</p>
-                    
-                    <div class="hero-button">
-                        <a href="events.html" class="btn-primary">Найти мероприятие</a>
-                    </div>
-                </div>
 
-                <div class="statistics">
-                    <div class="statistics-item"><h2>120+</h2><p>мероприятий</p></div>
-                    <div class="statistics-item"><h2>8500+</h2><p>участников</p></div>
-                    <div class="statistics-item"><h2>20+</h2><p>городов</p></div>
-                </div>
-            </section>
-            
-            <section class="hero-cards">
-                <div class="section-header">
-                    <div>
-                        <h2>Ближайшие мероприятия</h2>
-                        <p class="section-desc">Выбери ближайшее мероприятие по своим интересам</p>
-                    </div>
-                    <a href="events.html" class="link-more">Все мероприятия →</a>
-                </div>
+        <main class="hero">
+            <p class="hero-top">ВСЕ ИВЕНТЫ КОЛЛЕДЖА В ОДНОМ МЕСТЕ</p>
+            <h1 class="hero-title">Найди свое мероприятие.</h1>
+            <h2 class="hero-subtitle">Запишись за пару кликов.</h2>
+            <p class="hero-desc">
+                Все хакатоны, мастер-классы и конференции для тебя в одной ленте.
+            </p>
 
-                <div class="cards">
-                    <article class="card">Карточка 1</article>
-                    <article class="card">Карточка 2</article>
-                    <article class="card">Карточка 3</article>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-large">Найти мероприятие</a>
+                <a href="#" class="btn btn-outline">Как это работает</a>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-num">120+</div>
+                    <div class="stat-text">мероприятий</div>
                 </div>
-            </section>
+                <div class="stat">
+                    <div class="stat-num">8500+</div>
+                    <div class="stat-text">участников</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">20+</div>
+                    <div class="stat-text">городов</div>
+                </div>
+            </div>
         </main>
-    </body>
+
+        <section class="events">
+            <div class="events-head">
+                <h3 class="events-title">Ближайший импульс</h3>
+                <a href="#" class="events-link">Все мероприятия</a>
+            </div>
+
+            <div class="grid">
+
+                <svg style="display: none;">
+                    <defs>
+                        <path id="star-template" d="M266.663 38.8096L189.457 44.0449L248.841 93.6602L232.906 157H15C6.71573 157 0 150.284 0 142V15C1.54622e-06 6.71573 6.71573 0 15 0H282.248L266.663 38.8096ZM324.059 38.9219L324.129 39.0967L324.316 39.1094L391 43.6299V52.4619L341.967 93.4297L341.822 93.5508L341.868 93.7334L357.784 157H342.958L295.659 127.306L295.5 127.206L295.341 127.306L248.042 157H233.216L249.132 93.7334L249.178 93.5508L249.033 93.4297L190.222 44.293L266.684 39.1094L266.871 39.0967L266.941 38.9219L282.571 0H308.429L324.059 38.9219ZM342.394 157H248.606L295.5 127.56L342.394 157ZM391 142C391 150.284 384.284 157 376 157H358.094L342.159 93.6602L391 52.8535V142ZM278.482 57.6416L236.937 60.459L268.893 87.1582L258.732 127.541L294 105.4L329.268 127.541L319.107 87.1582L351.063 60.459L309.518 57.6416L294 19L278.482 57.6416ZM309.239 57.7539L309.31 57.9287L309.497 57.9414L350.298 60.707L318.916 86.9277L318.771 87.0488L318.817 87.2314L328.794 126.89L294.159 105.146L294 105.046L293.841 105.146L259.205 126.89L269.183 87.2314L269.229 87.0488L269.084 86.9277L237.701 60.707L278.503 57.9414L278.69 57.9287L278.761 57.7539L294 19.8037L309.239 57.7539ZM376 0C384.284 0 391 6.71573 391 15V43.3291L324.337 38.8096L308.752 0H376Z"/>
+                    </defs>
+                </svg>
+
+                <div class="card blue">
+                    <div class="cover">
+                        <svg class="cover-svg" viewBox="0 0 391 157" preserveAspectRatio="xMidYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <use href="#star-template" fill="url(#grad-blue)"/>
+                            <mask id="mask-blue" fill="white">
+                                <use href="#star-template"/>
+                            </mask>
+                            <use href="#star-template" stroke="#6F9FFF" stroke-width="0.6" mask="url(#mask-blue)"/>
+                            <defs>
+                                <linearGradient id="grad-blue" x1="213.5" y1="132.5" x2="132.5" y2="22.5" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#101012" stop-opacity="0.4"/>
+                                    <stop offset="1" stop-color="#6F9FFF" stop-opacity="0.4"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="cover-title">HACK<br>THE FUTURE</div>
+                    </div>
+                    <div class="info">
+                        <span class="tag">ХАКАТОН</span>
+                        <h4 class="card-title">NEON HACK 2026</h4>
+                        <p class="desc">48 часов на создание AI-продукта.</p>
+                        <p class="date">28-30 ноября · Москва · онлайн</p>
+                        <div class="status">Регистрация открыта</div>
+                        <div class="price">Бесплатно</div>
+                    </div>
+                </div>
+
+                <div class="card pink">
+                    <div class="cover">
+                        <svg class="cover-svg" viewBox="0 0 391 157" preserveAspectRatio="xMidYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <use href="#star-template" fill="url(#grad-pink)"/>
+                            <mask id="mask-pink" fill="white">
+                                <use href="#star-template"/>
+                            </mask>
+                            <use href="#star-template" stroke="#FF2E9A" stroke-width="0.6" mask="url(#mask-pink)"/>
+                            <defs>
+                                <linearGradient id="grad-pink" x1="213.5" y1="132.5" x2="132.5" y2="22.5" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#101012" stop-opacity="0.4"/>
+                                    <stop offset="1" stop-color="#FF2E9A" stop-opacity="0.4"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="cover-title">MAKE<br>IT BOLD</div>
+                    </div>
+                    <div class="info">
+                        <span class="tag">ВОРКШОП / ДИЗАЙН</span>
+                        <h4 class="card-title">Design Jam</h4>
+                        <p class="desc">От первой идеи до живого прототипа</p>
+                        <p class="date">10 февраля · онлайн</p>
+                        <div class="status">Регистрация открыта</div>
+                        <div class="price">Бесплатно</div>
+                    </div>
+                </div>
+
+                <div class="card purple">
+                    <div class="cover">
+                        <svg class="cover-svg" viewBox="0 0 391 157" preserveAspectRatio="xMidYMid slice" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <use href="#star-template" fill="url(#grad-purple)"/>
+                            <mask id="mask-purple" fill="white">
+                                <use href="#star-template"/>
+                            </mask>
+                            <use href="#star-template" stroke="#AD6FFF" stroke-width="0.6" mask="url(#mask-purple)"/>
+                            <defs>
+                                <linearGradient id="grad-purple" x1="213.5" y1="132.5" x2="132.5" y2="22.5" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#101012" stop-opacity="0.4"/>
+                                    <stop offset="1" stop-color="#AD6FFF" stop-opacity="0.4"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="cover-title">NEXT<br>IS NOW</div>
+                    </div>
+                    <div class="info">
+                        <span class="tag">КОНФЕРЕНЦИЯ / КАРЬЕРА</span>
+                        <h4 class="card-title">Tech Future</h4>
+                        <p class="desc">Люди и технологии завтрашнего дня</p>
+                        <p class="date">20 и 24 марта · Москва · офлайн</p>
+                        <div class="status">Регистрация открыта</div>
+                        <div class="price">Бесплатно</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
 </html>
