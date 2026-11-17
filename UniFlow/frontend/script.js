@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   
+
   const radioSolo = document.getElementById('radio-solo');
   const radioTeam = document.getElementById('radio-team');
   const teamFields = document.getElementById('team-fields');
@@ -17,39 +18,43 @@ document.addEventListener("DOMContentLoaded", function() {
         teamInputs.forEach(input => input.setAttribute('required', 'true'));
       }
     }
+    
     toggleTeamFields();
     radioSolo.addEventListener('change', toggleTeamFields);
     radioTeam.addEventListener('change', toggleTeamFields);
 
     const customAlert = document.getElementById('custom-alert');
 
+
     form.addEventListener('submit', function(event) {
       event.preventDefault();
 
       const formData = new FormData(form);
+      
+      const userData = {
+        name: formData.get('username'),
+        email: formData.get('useremail'),
+        college: formData.get('college'),
+        course: formData.get('course'),
+        telegram: formData.get('telegram'),
+        role: formData.get('role'),
+        participation: formData.get('participation'),
+        teamName: formData.get('participation') === 'team' ? formData.get('team_name') : 'Нет',
+        eventName: "NEON HACK 2026",
+        regDate: new Date().toLocaleDateString('ru-RU')
+      };
 
-      fetch('save.php', {
-        method: 'POST',
-        body: formData
-      })
-      .then(response => response.text()) 
-      .then(data => {
-        if (data.trim() === 'success') {
-          customAlert.classList.add('show');
-          form.reset();
-          if (radioTeam.checked) toggleTeamFields();
 
-          setTimeout(function() {
-            customAlert.classList.remove('show');
-          }, 3000);
-        } else {
-          alert('Ошибка на сервере: ' + data);
-        }
-      })
-      .catch(error => {
-        console.error('Ошибка:', error);
-        alert('Не удалось отправить заявку.');
-      });
+      localStorage.setItem('uniFlowUser', JSON.stringify(userData));
+
+      customAlert.classList.add('show');
+      form.reset();
+      
+      if (radioTeam.checked) toggleTeamFields();
+
+      setTimeout(function() {
+        customAlert.classList.remove('show');
+      }, 3000);
     });
   }
   
