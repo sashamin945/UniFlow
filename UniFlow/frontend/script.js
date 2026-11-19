@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
   
-
   const radioSolo = document.getElementById('radio-solo');
   const radioTeam = document.getElementById('radio-team');
   const teamFields = document.getElementById('team-fields');
@@ -25,9 +24,50 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const customAlert = document.getElementById('custom-alert');
 
+    
+    function validateField(input) {
+      const errorSpan = input.parentElement.querySelector('.error-msg');
+      
+      if (input.value.trim() === '') {
+        input.classList.add('input-error');
+        if (errorSpan) {
+          errorSpan.classList.add('show');
+        }
+        return false;
+      } else {
+        input.classList.remove('input-error');
+        if (errorSpan) errorSpan.classList.remove('show');
+        return true;
+      }
+    }
+
+    const requiredInputs = form.querySelectorAll('input[required]');
+    requiredInputs.forEach(input => {
+      input.addEventListener('blur', () => validateField(input));
+      input.addEventListener('input', () => {
+        if (input.value.trim() !== '') {
+           input.classList.remove('input-error');
+           const errorSpan = input.parentElement.querySelector('.error-msg');
+           if (errorSpan) errorSpan.classList.remove('show');
+        }
+      });
+    });
 
     form.addEventListener('submit', function(event) {
       event.preventDefault();
+      
+      let isFormValid = true;
+
+      const inputsToValidate = form.querySelectorAll('input[required]');
+      inputsToValidate.forEach(input => {
+        if (!validateField(input)) {
+          isFormValid = false;
+        }
+      });
+
+      if (!isFormValid) {
+        return; 
+      }
 
       const formData = new FormData(form);
       
@@ -44,13 +84,16 @@ document.addEventListener("DOMContentLoaded", function() {
         regDate: new Date().toLocaleDateString('ru-RU')
       };
 
-
-      localStorage.setItem('uniFlowUser', JSON.stringify(userData));
+      try {
+        localStorage.setItem('uniFlowUser', JSON.stringify(userData));
+      } catch(e) {
+        console.log("Не удалось сохранить в localStorage");
+      }
 
       customAlert.classList.add('show');
-      form.reset();
+      form.reset(); 
       
-      if (radioTeam.checked) toggleTeamFields();
+      if (radioTeam.checked) toggleTeamFields(); 
 
       setTimeout(function() {
         customAlert.classList.remove('show');
@@ -58,6 +101,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
   
+
   const searchInput = document.getElementById('searchInput');
   const dateFilter = document.getElementById('dateFilter');
   const filterBtns = document.querySelectorAll('.filter-btn');
@@ -101,3 +145,13 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
 });
+
+const NavMenu = document.getElementById('Naavmenu');
+const navMenu = document.getElementById('navMenu');
+
+if (NavMenu && navMenu) {
+  NavMenu.addEventListener('click', function() {
+    navMenu.classList.toggle('open');
+    NavMenu.classList.toggle('active');
+  });
+}
