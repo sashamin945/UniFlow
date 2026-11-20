@@ -10,6 +10,7 @@
 <body>
 
     <div class="wrapper">
+
         <div class="bg-star bg-star-left" aria-hidden="true">
             <svg viewBox="0 0 703 873" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_f_17_4)">
@@ -70,7 +71,14 @@
         <header class="header">
             <div class="header-inner">
                 <div class="logo">UniFlow</div>
-                <nav class="nav">
+                
+                <button class="nav-menu" id="Naavmenu"> 
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <nav class="nav" id="navMenu">
                     <a href="index.html" class="nav-link">Главная</a>
                     <a href="events.html" class="nav-link">Мероприятия</a>
                     <a href="#" class="nav-link">Как это работает</a>
@@ -92,7 +100,7 @@
                         <circle cx="11" cy="11" r="8"></circle>
                         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                     </svg>
-                    <input type="text" id="searchInput" class="search-input" placeholder="Название, тема или навык" maxlength="50">
+                    <input type="text" id="searchInput" class="search-input" placeholder="Название, тема или навык">
                 </div>
                 <div class="filter-dropdown">
                     <select id="dateFilter" class="date-select">
@@ -206,6 +214,7 @@
             </div>
         </section>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
