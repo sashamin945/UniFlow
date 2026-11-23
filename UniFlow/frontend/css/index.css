@@ -384,87 +384,86 @@ a {
 }
 
 @media (max-width: 768px) {
+    .wrapper {
+        padding: 20px;
+    }
+
+    .bg-star {
+        display: none;
+    }
+
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        height: auto;
+        min-height: 70px;
+        padding: 15px 0;
+    }
   
-  .wrapper {
-    padding: 0 15px;
-  }
+    .nav-menu {
+        display: flex;
+    }
 
-  .bg-star {
-    display: none;
-  }
+    .nav {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        background-color: #10101a;
+        padding: 20px;
+        border-radius: 15px;
+        border: 1px solid #6f9fff;
+        margin-top: 15px;
+        order: 3;
+    }
 
-  .header {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    height: auto;
-    min-height: 80px;
-    padding: 15px 0;
-  }
-  
-  .nav-menu{
-    display: flex;
-  }
+    .nav.open {
+        display: flex;
+    }
 
-  .nav {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    background-color: #10101a;
-    padding: 20px;
-    border-radius: 15px;
-    border: 1px solid #6f9fff;
-    margin-top: 15px;
-    order: 3;
-  }
-
-  .nav.open {
-    display: flex;
-  }
-
-  header > .btn-small {
-    display: none;
-  }
-
-  .btn-small {
-    width: 100%;
-    max-width: 300px;
-  }
+    header > .btn-small {
+        display: none;
+    }
 
     .hero {
-        padding-top: 40px;
+        padding-top: 30px;
     }
 
     .hero-top {
-        font-size: 13px;
+        font-size: 12px;
+        margin-bottom: 15px;
     }
 
     .hero-title {
         font-size: 32px;
         letter-spacing: -0.5px;
+        margin-bottom: 5px;
     }
 
     .hero-subtitle {
-        font-size: 24px;
+        font-size: 22px;
+        margin-bottom: 20px;
     }
 
     .hero-desc {
-        font-size: 15px;
+        font-size: 14px;
+        margin-bottom: 30px;
     }
 
     .hero-buttons {
         flex-direction: column;
         width: 100%;
         max-width: 340px;
-        margin-bottom: 50px;
+        gap: 15px;
+        margin-bottom: 40px;
     }
 
     .btn-large, .btn-outline {
         width: 100%;
-        font-size: 18px;
-        height: 50px;
+        font-size: 16px;
+        height: 48px;
     }
 
     .stats {
@@ -480,37 +479,40 @@ a {
     }
 
     .stat-text {
-        font-size: 14px;
+        font-size: 13px;
         text-align: center;
     }
 
     .events {
-        margin-top: 60px;
-        padding: 0 20px;
+        margin-top: 50px;
+        padding: 0;
     }
 
     .events-head {
         flex-direction: column;
         align-items: flex-start;
-        gap: 15px;
+        gap: 10px;
+        margin-bottom: 20px;
     }
 
     .events-title {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .events-subtitle {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .grid {
         grid-template-columns: 1fr;
+        gap: 20px;
     }
 
-    .bg-star {
-        width: 600px;
-        height: 600px;
-    }
-    .bg-star-left { left: -250px; }
-    .bg-star-right { right: -250px; }
+    .card-title {
+        font-size: 22px;
+  }
+
+    .cover-title {
+        font-size: 24px;
+  }
 }
