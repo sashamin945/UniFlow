@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const customAlert = document.getElementById('custom-alert');
 
-    
     function validateField(input) {
       const errorSpan = input.parentElement.querySelector('.error-msg');
       
@@ -72,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
       const formData = new FormData(form);
       
       const userData = {
+        id: Date.now(),
         name: formData.get('username'),
         email: formData.get('useremail'),
         college: formData.get('college'),
@@ -85,9 +85,19 @@ document.addEventListener("DOMContentLoaded", function() {
       };
 
       try {
-        localStorage.setItem('uniFlowUser', JSON.stringify(userData));
-      } catch(e) {
-        console.log("Не удалось сохранить в localStorage");
+        const savedData = localStorage.getItem('uniFlowRegistrations');
+        let registrations = savedData ? JSON.parse(savedData) : [];
+
+        registrations.push(userData);
+
+        localStorage.setItem('uniFlowRegistrations', JSON.stringify(registrations));
+
+        console.log("Данные успешно сохранены в JSON:", registrations);
+
+      } 
+      
+      catch(e) {
+        console.log("Ошибка при сохранении в localStorage", e);
       }
 
       customAlert.classList.add('show');
@@ -101,7 +111,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
   
-
   const searchInput = document.getElementById('searchInput');
   const dateFilter = document.getElementById('dateFilter');
   const filterBtns = document.querySelectorAll('.filter-btn');
