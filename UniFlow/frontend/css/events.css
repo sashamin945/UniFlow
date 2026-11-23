@@ -408,6 +408,10 @@ a {
 
 @media (max-width: 768px) {
 
+    .wrapper {
+        padding-bottom: 20px;
+  }
+
     .bg-star {
         display: none;
     }
