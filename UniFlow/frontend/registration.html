@@ -69,7 +69,13 @@
 
         <header class="header">
             <div class="logo">UniFlow</div>
-            <nav class="nav">
+            <button class="nav-menu" id="Naavmenu"> 
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav class="nav" id="navMenu">
                 <a href="index.html" class="nav-link">Главная</a>
                 <a href="events.html" class="nav-link">Мероприятия</a>
                 <a href="#" class="nav-link">Как это работает</a>
@@ -92,32 +98,31 @@
                         <div class="input-group">
                             <label>Имя и фамилия *</label>
                             <input type="text" name="username" placeholder="Виолетта Ранде" required>
-                            <span class="error-msg">error</span>
+                            <span class="error-msg">введите имя и фамилию</span>
                         </div>
                         <div class="input-group">
                             <label>Email *</label>
                             <input type="email" name="useremail" placeholder="violetta_r@gmail.com" required>
-                            <span class="error-msg">error</span>
+                            <span class="error-msg">введите email</span>
                         </div>
                         <div class="input-group">
                             <label>Колледж *</label>
                             <input type="text" name="college" placeholder="ИТ.Москва" required>
-                            <span class="error-msg">error</span>
+                            <span class="error-msg">введите колледж</span>
                         </div>
                         <div class="input-group">
                             <label>Курс *</label>
                             <input type="text" name="course" placeholder="2 курс" required>
-                            <span class="error-msg">error</span>
+                            <span class="error-msg">введите курс</span>
                         </div>
                         <div class="input-group">
                             <label>Telegram</label>
                             <input type="text" name="telegram" placeholder="@Violla">
-                            <span class="error-msg">error</span>
                         </div>
                         <div class="input-group">
                             <label>Роль в команде *</label>
                             <input type="text" name="role" placeholder="Frontend-разработчик" required>
-                            <span class="error-msg">error</span>
+                            <span class="error-msg">введите свою роль в команде</span>
                         </div>
                     </div>
 
@@ -138,12 +143,12 @@
                             <div class="input-group">
                                 <label>Название твоей команды *</label>
                                 <input type="text" name="team_name" placeholder="SuperDuperCocaCola" required>
-                                <span class="error-msg">error</span>
+                                <span class="error-msg">введите название вашей команды</span>
                             </div>
                             <div class="input-group">
                                 <label>Кол-во участников *</label>
                                 <input type="text" name="team_count" placeholder="От 2 до 6" required>
-                                <span class="error-msg">error</span>
+                                <span class="error-msg">введите кол-во участников</span>
                             </div>
                         </div>
                     </div>
@@ -184,7 +189,6 @@
                 <span class="alert-icon">✓</span>
                 <span class="alert-text">Заявка успешно подана!</span>
             </div>
-            
         </main>
     </div>
     
