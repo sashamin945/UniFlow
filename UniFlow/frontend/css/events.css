@@ -406,6 +406,32 @@ a {
     display: none;
 }
 
+.no-results {
+    grid-column: 1 / -1;
+    min-height: 300px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(16, 16, 26, 0.5);
+    border: 1px dashed #6f9fff;
+    border-radius: 15px;
+    padding: 40px 20px;
+}
+
+.no-results h3 {
+    font-size: 24px;
+    color: #f5f5ff;
+    margin-bottom: 10px;
+}
+
+.no-results p {
+    color: #a2a3b8;
+    font-family: 'Iosevka Charon Mono', monospace;
+    font-size: 14px;
+}
+
 @media (max-width: 768px) {
 
     .wrapper {
